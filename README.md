@@ -36,3 +36,11 @@ cargo run -p <project>
 ```
 
 For the build and runner configuration see `.cargo/config`.
+
+## Compatibility
+
+_**Note:**_ I have not tested any other platform.
+
+### STM32L4x2
+
+`memory.x` may need some adjustment.
