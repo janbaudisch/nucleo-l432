@@ -12,3 +12,8 @@ workspace = ".."
 cortex-m-rt = "0.6"
 cortex-m-semihosting = "0.3"
 panic-halt = "0.2"
+
+[[bin]]
+name = "hello"
+test = false
+bench = false

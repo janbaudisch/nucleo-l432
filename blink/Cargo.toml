@@ -13,3 +13,8 @@ cortex-m = "0.6"
 cortex-m-rt = "0.6"
 panic-halt = "0.2"
 stm32l4xx-hal = { version = "0.4.0", features = ["stm32l4x2"] }
+
+[[bin]]
+name = "blink"
+test = false
+bench = false
