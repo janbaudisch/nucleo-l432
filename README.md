@@ -1,3 +1,5 @@
+[![Build][build-img]][build-url]
+
 # nucleo-l432
 
 > Rust on STM32L432 Nucleo-32.
@@ -44,3 +46,6 @@ _**Note:**_ I have not tested any other platform.
 ### STM32L4x2
 
 `memory.x` may need some adjustment.
+
+[build-img]: https://travis-ci.com/janbaudisch/nucleo-l432.svg?branch=master
+[build-url]: https://travis-ci.com/janbaudisch/nucleo-l432
