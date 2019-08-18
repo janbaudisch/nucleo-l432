@@ -4,7 +4,7 @@
 
 > Rust on STM32L432 Nucleo-32.
 
-This is a collection of simple programs for the STM32L432 Nucleo-32 board.
+This is a collection of simple programs for the [STM32L432 Nucleo-32 board][board].
 
 ## Usage
 
@@ -49,3 +49,4 @@ _**Note:**_ I have not tested any other platform.
 
 [build-img]: https://travis-ci.com/janbaudisch/nucleo-l432.svg?branch=master
 [build-url]: https://travis-ci.com/janbaudisch/nucleo-l432
+[board]: https://www.st.com/en/evaluation-tools/nucleo-l432kc.html
