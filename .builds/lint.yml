@@ -1,0 +1,22 @@
+image: archlinux
+package:
+  - base-devel
+  - curl
+sources:
+  - https://git.sr.ht/~janbaudisch/nucleo-l432
+tasks:
+  - setup: |
+      curl -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
+      . $HOME/.cargo/env
+      rustup component add llvm-tools-preview
+      rustup component add clippy
+      rustup component add rustfmt
+      rustup target add thumbv7em-none-eabihf
+  - format: |
+      . $HOME/.cargo/env
+      cd nucleo-l432
+      cargo fmt --all -- --check
+  - lint: |
+      . $HOME/.cargo/env
+      cd nucleo-l432
+      cargo clippy --all -- --deny clippy::all

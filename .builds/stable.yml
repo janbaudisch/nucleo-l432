@@ -1,0 +1,20 @@
+image: archlinux
+package:
+  - base-devel
+  - curl
+sources:
+  - https://git.sr.ht/~janbaudisch/nucleo-l432
+tasks:
+  - setup: |
+      curl -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
+      . $HOME/.cargo/env
+      rustup component add llvm-tools-preview
+      rustup target add thumbv7em-none-eabihf
+  - build: |
+      . $HOME/.cargo/env
+      cd nucleo-l432
+      cargo build --verbose --all
+  - test: |
+      . $HOME/.cargo/env
+      cd nucleo-l432
+      cargo test --verbose --all

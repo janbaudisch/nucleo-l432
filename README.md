@@ -47,6 +47,6 @@ _**Note:**_ I have not tested any other platform.
 
 `memory.x` may need some adjustment.
 
-[build-img]: https://travis-ci.com/janbaudisch/nucleo-l432.svg?branch=master
-[build-url]: https://travis-ci.com/janbaudisch/nucleo-l432
+[build-img]: https://builds.sr.ht/~janbaudisch/nucleo-l432.svg
+[build-url]: https://builds.sr.ht/~janbaudisch/nucleo-l432
 [board]: https://www.st.com/en/evaluation-tools/nucleo-l432kc.html
